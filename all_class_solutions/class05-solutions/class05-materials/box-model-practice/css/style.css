@@ -1,0 +1,23 @@
+h1{
+  font-size: 30px;
+  border: 2px solid red;
+  padding-left: 100px;
+}
+h2{
+  font-size: 25px;
+  padding: 20px 0;
+  margin: 50px;
+  border: 20px solid gold;
+}
+span{
+  color: blue;
+  border: 1px solid black;
+  padding: 5px;
+}
+/* Please make the section 25% width, 200px tall, centered, and with a thin purple border */
+section{
+  width:25%;
+  height: 200px;
+  border: 2px solid purple;
+  margin: auto;
+}

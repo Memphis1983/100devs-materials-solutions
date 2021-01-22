@@ -1,0 +1,41 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+}
+img{
+  float: left;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@keyframes  pewPew{
+     0% {
+        transform: translate(0,0);
+     }
+     50%{
+       background: gray;
+     }
+     100% {
+          border: 10px solid gray;
+          transform: translate(900px,0);
+     }
+}
+
+.hadouken{
+  height: 200px;
+  width: 200px;
+  background: blue;
+  border-radius: 100%;
+  float: left;
+  margin: 10px 0 0 10px;
+
+  animation-name: pewPew;
+  animation-iteration-count: infinite;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}

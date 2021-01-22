@@ -1,0 +1,32 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+}
+section{
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@keyframes  flyAway{
+     0% {
+        transform: translate(300%,0);
+     }
+     100% {
+          transform: translate(0,0);
+          transform: rotateY(180deg);
+     }
+}
+
+.fly{
+  animation-name: flyAway;
+  animation-iteration-count: infinite;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-play-state: running;
+}

@@ -1,0 +1,36 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+}
+section{
+  width: 500px;
+  margin: 20px auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@keyframes  flickOfDaWrist{
+     0% {
+        transform: rotateX(0deg);
+     }
+     100% {
+          transform: rotateX(360deg);
+     }
+}
+
+.flip{
+  /*animation-name*/
+  animation-name: flickOfDaWrist;
+  /*animation-iteration-count*/
+  animation-iteration-count: infinite;
+  /*animation-duration*/
+  animation-duration: 700ms;
+  /*animation-timing-function*/
+  animation-timing-function: linear;
+  /*animation-play-state*/
+  animation-play-state: running;
+}

@@ -1,0 +1,12 @@
+section > h2{
+  color: purple;
+  font-size: 40px;
+}
+
+article h2{
+  color: red;
+}
+
+section article h2{
+  color: gold;
+}

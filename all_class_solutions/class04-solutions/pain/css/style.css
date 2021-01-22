@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+header,
+footer {
+  height: 100px;
+  border: 3px solid black;
+  clear: both;
+  background: rgb(86, 86, 236);
+  border-radius: 10px;
+  padding: 5px;
+  margin: auto;
+}
+section {
+  height: 300px;
+  width: 33.3333%;
+  border: 1px solid black;
+  float: left;
+  border-radius: 10px;
+}          
+           
+@media screen and (max-width: 320px) {
+  .top,    
+  .middle, 
+  .bottom {
+    width: 100%;
+    background: #bada55;
+    border-radius: 10px;
+  }        
+}          
+@media (min-width: 321px) and (max-width: 480px) {
+  .top {   
+    width: 100%;
+  }        
+  .middle, 
+  .bottom {
+    width: 50%;
+    margin: 0;
+  }        
+}          
+           
+@media (min-width: 481px) and (max-width: 768px) {
+  .top {   
+    width: 100%;
+  }        
+  .middle, 
+  .bottom {
+    width: 50%;
+    margin: auto 0;
+  }        
+}          
+           

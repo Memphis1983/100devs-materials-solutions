@@ -1,0 +1,42 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+}
+section{
+  width: 500px;
+  margin: 20px auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@keyframes  beybladeAction{
+     0% {
+        transform: rotateZ(0deg);
+     }
+     25% {
+        transform: rotateZ(135deg);
+     }
+     50% {
+        transform: rotateZ(270deg);
+     }
+     100% {
+          transform: rotateZ(360deg);
+     }
+}
+
+.letItRip{
+  /*animation-name*/
+  animation-name: beybladeAction;
+  /*animation-iteration-count*/
+  animation-iteration-count: infinite;
+  /*animation-duration*/
+  animation-duration: 500ms;
+  /*animation-timing-function*/
+  animation-timing-function: linear;
+  /*animation-play-state*/
+  animation-play-state: running;
+}

@@ -1,0 +1,41 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+}
+div{
+  height: 50px;
+  width: 150px;
+  margin: 20px auto;
+  background: lightgreen;
+  border-radius: 5%;
+}
+span{
+  font-size: 20px;
+  color: white;
+  display: block;
+  margin-left: 35px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@keyframes  move{
+     0% {
+        transform: rotateZ(-25deg);
+     }
+     100% {
+          transform: rotateZ(25deg);
+     }
+}
+
+.wiggle{
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
