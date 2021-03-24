@@ -56,6 +56,7 @@
 // }
 // houseOne()
 
+
 // Code 05
 // const promise = new Promise((resolve, reject) => {
 //     const error = false
@@ -69,7 +70,6 @@
 // promise
 //     .then(data => console.log(data))
 //     .catch(err => console.log(err))
-
 
 
 //Code 06
@@ -136,16 +136,15 @@
 // getPaid()
 
 //Code 08
-try {
-    async function getACuteDogPhoto(){
+
+    async function getACuteDogPhoto() {
+        try {
         const res = await fetch('https://dog.ceo/api/breeds/image/random')
         const data = await res.json()
         console.log(data)
+    } catch (e) {
+        console.log(`Error: ${e}`)
     }
-} catch (e) {
-    console.log(`Error: ${e}`)
-} finally {
-    
 }
 
 getACuteDogPhoto()
